@@ -1,0 +1,25 @@
+{
+  "name": "scholar-clients",
+  "version": "1.0.0",
+  "description": "Please see: [https://scholar.naish.io/docs/integrations](https://scholar.naish.io/docs/integrations)",
+  "scripts": {
+		"setup": "athloi exec npm ci",
+    "test": "athloi run test",
+    "version": "athloi version"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexnaish/scholar-clients.git"
+  },
+  "keywords": [],
+  "author": "",
+	"license": "ISC",
+	"workspaces": ["clients/*"],
+  "bugs": {
+    "url": "https://github.com/alexnaish/scholar-clients/issues"
+  },
+  "homepage": "https://github.com/alexnaish/scholar-clients#readme",
+  "devDependencies": {
+    "@financial-times/athloi": "^1.0.0"
+  }
+}
