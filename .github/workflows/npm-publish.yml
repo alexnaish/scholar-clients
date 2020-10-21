@@ -16,7 +16,6 @@ jobs:
           node-version: 12.x
           registry-url: https://registry.npmjs.org/
       - uses: actions/checkout@v2
-      - run: ls -ltr
       - run: npm ci
       - run: npm run setup
       - run: npm test
