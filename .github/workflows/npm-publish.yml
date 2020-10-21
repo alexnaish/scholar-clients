@@ -19,6 +19,7 @@ jobs:
       - run: npm ci
       - run: npm run setup
       - run: npm test
-      - run: npm run publish -- ${{env.GITHUB_REF}}
+      - run: npm run version -- ${GITHUB_REF##*/}
+      - run: npm run publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

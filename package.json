@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Please see: [https://scholar.naish.io/docs/integrations](https://scholar.naish.io/docs/integrations)",
   "scripts": {
-		"setup": "athloi exec npm ci",
+    "setup": "athloi exec npm ci",
     "test": "athloi run test",
-    "version": "athloi version"
+    "version": "athloi version",
+    "publish": "athloi publish -- --access=public"
   },
   "repository": {
     "type": "git",
@@ -13,8 +14,8 @@
   },
   "keywords": [],
   "author": "",
-	"license": "ISC",
-	"workspaces": ["clients/*"],
+  "license": "ISC",
+  "workspaces": ["clients/*"],
   "bugs": {
     "url": "https://github.com/alexnaish/scholar-clients/issues"
   },
